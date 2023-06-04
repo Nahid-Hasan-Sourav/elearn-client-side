@@ -1,3 +1,4 @@
+
 const PopularCourses = () => {
   const array = [
     {
@@ -18,7 +19,7 @@ const PopularCourses = () => {
   ];
   console.log(array);
   return (
-    <div className="p-[30px]">
+    <div className="p-[30px] bg-[#3b619a]">
       <div className="text-center">
         <h1 className="my-[35px] text-4xl font-extrabold">
           Explore Popular Courses
