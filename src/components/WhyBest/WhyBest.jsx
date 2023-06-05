@@ -1,7 +1,7 @@
 
 const WhyBest = () => {
     return (
-      <div className="bg-gray-400 px-[30px] pt-[35px] pb-[40px]">
+      <div className="bg-gray-200 px-[30px] pt-[35px] pb-[40px]">
         <div className="text-center p-[15px]">
           <h1 className="font-bold text-5xl text-white mt-[15px]">
             Why We Are The Best?
