@@ -19,7 +19,7 @@ const Home = () => {
             <HowWorks/>
             <Faq/>
             <DemoClass/>
-            {/* <Test/> */}
+            
         </div>
     );
 };
