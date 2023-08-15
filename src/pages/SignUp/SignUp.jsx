@@ -7,8 +7,8 @@ const SignUp = () => {
   const [userType, setUserType] = useState("user");
 
   return (
-    <div className="flex items-center justify-center w-screen h-screen ">
-      <div className="w-full max-w-md mx-auto bg-white rounded shadow-lg">
+    <div className="flex items-center justify-center w-screen h-screen bg-slate-400">
+      <div className="w-full max-w-lg mx-auto bg-white rounded shadow-lg">
         <h1 className="font-bold text-2xl uppercase text-center my-8">
           Sign Up As
         </h1>
