@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 const AdminLogin = () => {
     return (
@@ -44,6 +44,17 @@ const AdminLogin = () => {
               Forgot Password?
             </a>
           </div>
+          <div className="mt-4">
+          <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+            Don’t have an account yet?{" "}
+            <Link to="signUp" className="text-black font-medium text-primary-600 hover:underline dark:text-primary-500">
+           
+              Sign up
+        
+            </Link>
+            
+          </p>
+        </div>
         </form>  
         </>
     );
