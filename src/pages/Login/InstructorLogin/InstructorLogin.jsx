@@ -2,9 +2,21 @@ import { Link } from "react-router-dom";
 
 
 const InstructorLogin = () => {
+  const handleUserLogin=(e)=>{
+    e.preventDefault();
+    const form =e.target;
+    const userEmail=form.userEmail.value;
+    const userPassword=form.userEmail.value;
+    const loginInfo ={
+      role:"instructor",
+      userEmail,
+      userPassword
+    }
+    console.log(loginInfo);
+  }
     return (
         <>
-          <form className="px-8 pt-6 pb-8 mb-4 ">
+          <form className="px-8 pt-6 pb-8 mb-4 " onSubmit={(e)=>handleUserLogin(e)}>
             
           <div className="mb-4">
             <label className="block mb-2 text-sm font-bold text-gray-700">
@@ -12,9 +24,9 @@ const InstructorLogin = () => {
             </label>
             <input
               className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-              id="username"
+              name="userEmail"
               type="text"
-              placeholder="Username"
+              placeholder="userEmail"
             />
           </div>
           <div className="mb-6">
@@ -23,7 +35,7 @@ const InstructorLogin = () => {
             </label>
             <input
               className="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-              id="password"
+              name="userPassword"
               type="password"
               placeholder="******************"
             />
@@ -48,7 +60,7 @@ const InstructorLogin = () => {
           <div className="mt-4">
           <p className="text-sm font-light text-gray-500 dark:text-gray-400">
             Don’t have an account yet?{" "}
-            <Link to="/signUp" className="text-black font-medium text-primary-600 hover:underline dark:text-primary-500">
+            <Link to="/signUp" className="font-medium text-black text-primary-600 hover:underline dark:text-primary-500">
            
               Sign up
         

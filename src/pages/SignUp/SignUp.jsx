@@ -8,8 +8,8 @@ const SignUp = () => {
 
   return (
     <div className="flex items-center justify-center w-screen h-screen bg-slate-400">
-      <div className="w-full max-w-lg mx-auto bg-white rounded shadow-lg">
-        <h1 className="font-bold text-2xl uppercase text-center my-8">
+      <div className="w-full max-w-lg mx-auto bg-white rounded shadow-lg md:h-[700px] min-h-[514px]">
+        <h1 className="my-8 text-2xl font-bold text-center uppercase">
           Sign Up As
         </h1>
         <div className="flex mb-8">
@@ -17,7 +17,12 @@ const SignUp = () => {
             className={`flex-1 font-bold py-4 text-black ${
               userType === "admin" ? "bg-blue-500 text-white" : "bg-gray-100"
             }`}
-            onClick={() => setUserType("admin")}
+            onClick={() => {
+              setUserType("");
+                setTimeout(() => {
+                setUserType("admin");
+                }, 500);
+              }}
           >
             ADMIN
           </button>
@@ -28,7 +33,12 @@ const SignUp = () => {
                 ? "bg-blue-500 text-white"
                 : "bg-gray-100"
             }`}
-            onClick={() => setUserType("instructor")}
+            onClick={() => {
+              setUserType("");
+                setTimeout(() => {
+                setUserType("instructor");
+                }, 500);
+              }}
           >
             INSTRUCTOR
           </button>
@@ -37,7 +47,12 @@ const SignUp = () => {
             className={`flex-1 font-bold py-4 text-black ${
               userType === "user" ? "bg-blue-500 text-white" : "bg-gray-100"
             }`}
-            onClick={() => setUserType("user")}
+            onClick={() => {
+            setUserType("");
+              setTimeout(() => {
+              setUserType("user");
+              }, 500);
+            }}
           >
             USER
           </button>
@@ -52,6 +67,13 @@ const SignUp = () => {
           {userType === "user" && <UserSignUp />}
           {userType === "instructor" && <InstructorSignUp />}
           {userType === "admin" && <AdminSignUp />}
+          {userType === "" && (
+            <div   className="h-full bg-white">
+            <div   className="flex items-center justify-center h-full">
+              <img className="w-16 h-16" src="https://icons8.com/preloaders/preloaders/1488/Iphone-spinner-2.gif" alt=""/>
+            </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
