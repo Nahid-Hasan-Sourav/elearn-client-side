@@ -4,10 +4,10 @@ import AnyQues from "../../assets/animation/anyQuestion.json";
 const Faq = () => {
   return (
     <div className="px-[35px] pt-[35px] bg-[#3b619a]">
-      <div className="flex lg:flex-row mt-[40px]">
+      <div className="flex lg:flex-row md:flex-col flex-col  mt-[40px]">
         <div className="lg:w-[40%] pl-[90px] ">
           <div>
-            <h2 className="font-bold text-2xl">Frequently ask question</h2>
+            <h2 className="text-2xl font-bold">Frequently ask question</h2>
             <h1 className="font-extrabold text-6xl my-[20px]">
               Any Question?<br></br>Find Here.
             </h1>
@@ -25,9 +25,9 @@ const Faq = () => {
 
         <div
           tabIndex={0}
-          className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+          className="border collapse collapse-plus border-base-300 bg-base-100 rounded-box"
         >
-          <div className="collapse-title text-xl font-medium">
+          <div className="text-xl font-medium collapse-title">
             What are the different ways to manage a state in a React
             application?
           </div>
@@ -46,7 +46,7 @@ const Faq = () => {
           tabIndex={1}
           className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-[20px]"
         >
-          <div className="collapse-title text-xl font-medium">
+          <div className="text-xl font-medium collapse-title">
             What are the different ways to manage a state in a React
             application?
           </div>
@@ -66,7 +66,7 @@ const Faq = () => {
           tabIndex={2}
           className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-[20px]"
         >
-          <div className="collapse-title text-xl font-medium">
+          <div className="text-xl font-medium collapse-title">
             What are the different ways to manage a state in a React
             application?
           </div>
@@ -85,7 +85,7 @@ const Faq = () => {
           tabIndex={3}
           className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-[20px]"
         >
-          <div className="collapse-title text-xl font-medium">
+          <div className="text-xl font-medium collapse-title">
             What are the different ways to manage a state in a React
             application?
           </div>
@@ -104,7 +104,7 @@ const Faq = () => {
           tabIndex={4}
           className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-[20px]"
         >
-          <div className="collapse-title text-xl font-medium">
+          <div className="text-xl font-medium collapse-title">
             What are the different ways to manage a state in a React
             application?
           </div>

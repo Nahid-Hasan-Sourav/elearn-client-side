@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const AdminLogin = () => {
-  const [userData,setUserData]=useState('')
   const handleUserLogin=(e)=>{
     e.preventDefault();
     const form =e.target;
@@ -16,16 +15,7 @@ const AdminLogin = () => {
       userPassword
     }
     console.log(loginInfo);
-    axios
-      .post('', {
-        loginInfo
-      })
-      .then(response => {
-        setUserData(response.data);
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
+  
     
   }
     return (
