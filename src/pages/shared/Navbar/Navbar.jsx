@@ -9,8 +9,8 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link to="/" className="text-black">
-          Courses
+        <Link to="/category" className="text-black">
+          Category
         </Link>
       </li>
       <li>

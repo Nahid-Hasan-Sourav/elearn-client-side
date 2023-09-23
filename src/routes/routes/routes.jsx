@@ -10,6 +10,7 @@ import Dashboard from "../../layout/Main/Dashboard";
 import AddCategory from "../../components/Category/AddCategory";
 import Login from "../../pages/Login/Login";
 import SignUp from "../../pages/SignUp/SignUp";
+import Category from "../../pages/category/Category";
 
 
 export const router = createBrowserRouter([
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
             {
                 path:'signUp',
                 element:<SignUp/>
+            },
+            {
+                path:'/category',
+                element:<Category/>
             },
             {
                 path:'dashboard',

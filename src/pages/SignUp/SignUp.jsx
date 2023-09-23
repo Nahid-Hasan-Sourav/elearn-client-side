@@ -40,7 +40,7 @@ const SignUp = () => {
                 }, 500);
               }}
           >
-            INSTRUCTOR
+           START TEACHING
           </button>
 
           <button
@@ -54,8 +54,8 @@ const SignUp = () => {
               }, 500);
             }}
           >
-            USER
-          </button>
+                 START LEARNING
+          </button>=
         </div>
         <div
           className={`transition-opacity duration-1000 ease-in-out mt-4 ${

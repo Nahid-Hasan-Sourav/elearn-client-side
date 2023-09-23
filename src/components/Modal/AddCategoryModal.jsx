@@ -12,7 +12,7 @@ const AddCategoryModal = ({ isOpen, onClose }) => {
       </div>
       )}
     </>
-  );
+  ); 
 };
 
 export default AddCategoryModal;
