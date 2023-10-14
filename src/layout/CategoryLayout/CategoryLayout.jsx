@@ -22,8 +22,8 @@ const CategoryLayout = () => {
 
     return (
         <div className="flex h-screen">
-            <div className="navbar-start bg-gray-200 w-[25%] ">
-                <div className='p-3 bg-blue-400 font-bold text-2xl text-white text-center'>
+            <div className="navbar-start w-[25%] ">
+                <div className='p-3 bg-gray-100  font-bold text-2xl text-black text-center my-[20px]'>
                     <h1>COURSE CATEGORIES</h1>
                 </div>
                 <ul className=''> 
