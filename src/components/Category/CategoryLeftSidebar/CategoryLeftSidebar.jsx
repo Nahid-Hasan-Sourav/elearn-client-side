@@ -20,19 +20,21 @@ const CategoryLeftSidebar = () => {
     console.log("Watch ",openCategory)
     return (
         <>
-             <div className="navbar-start w-[25%] ">
+             <div className="navbar-start w-[25%] border-r-4">
                 <div className='p-3 bg-gray-100  font-bold text-2xl text-black text-center my-[20px]'>
                     <h1>COURSE CATEGORIES</h1>
                 </div>
                 <ul className=''> 
                     {categories.map((category, index) => (
                         <li key={index} className='w-[60%] mx-auto mb-[10px]'>
+                            <Link to={`category/sub-category`}>
                             <div
                                 className="cursor-pointer category"
                                 onClick={() => setOpenCategory(index === openCategory ? null : index)}
                             >
                                 {category.name}
-                            </div>
+                            </div> 
+                            </Link>
                             {openCategory === index && (
                                 <ul className="subcategories">
                                     {category.subcategories.map((subcategory, subIndex) => (

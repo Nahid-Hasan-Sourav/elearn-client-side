@@ -12,6 +12,7 @@ import Login from "../../pages/Login/Login";
 import SignUp from "../../pages/SignUp/SignUp";
 import Category from "../../pages/category/Category";
 import CategoryLayout from "../../layout/CategoryLayout/CategoryLayout";
+import SubCategory from "../../components/SubCategory/SubCategory";
 
 
 export const router = createBrowserRouter([
@@ -35,6 +36,18 @@ export const router = createBrowserRouter([
             {
                 path:'/category',
                 element:<CategoryLayout/>,
+                children:[
+                    {
+                        path:'/category',
+                        element:<Category/>
+
+                    },
+                    {
+                        path:'category/sub-category',
+                        element:<SubCategory/>
+
+                    }
+                ]
                 
             },
             {
