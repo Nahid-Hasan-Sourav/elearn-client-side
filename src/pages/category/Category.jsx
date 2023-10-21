@@ -28,7 +28,7 @@ const Category = () => {
               />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">Web Development</h2>
+              <h2 className="card-title">Digital Marketing</h2>
              
             </div>
           </div>
@@ -40,58 +40,11 @@ const Category = () => {
               />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">Web Development</h2>
+              <h2 className="card-title">Freelancing</h2>
              
             </div>
           </div>
-          <div className="shadow-lg card card-compact bg-base-100">
-            <figure>
-              <img
-                src="https://www.creativeitinstitute.com/images/course/course_1663052056.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Web Development</h2>
-             
-            </div>
-          </div>
-          <div className="shadow-lg card card-compact bg-base-100">
-            <figure>
-              <img
-                src="https://www.creativeitinstitute.com/images/course/course_1663052056.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Web Development</h2>
-             
-            </div>
-          </div>
-          <div className="shadow-lg card card-compact bg-base-100">
-            <figure>
-              <img
-                src="https://www.creativeitinstitute.com/images/course/course_1663052056.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Web Development</h2>
-             
-            </div>
-          </div>
-          <div className="shadow-lg card card-compact bg-base-100">
-            <figure>
-              <img
-                src="https://www.creativeitinstitute.com/images/course/course_1663052056.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Web Development</h2>
-             
-            </div>
-          </div>
+         
         </div>
       </div>
     );

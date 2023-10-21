@@ -27,7 +27,7 @@ const CategoryLeftSidebar = () => {
                 <ul className=''> 
                     {categories.map((category, index) => (
                         <li key={index} className='w-[60%] mx-auto mb-[10px]'>
-                            <Link to={`category/sub-category`}>
+                            <Link to={`sub-category`}>
                             <div
                                 className="cursor-pointer category"
                                 onClick={() => setOpenCategory(index === openCategory ? null : index)}
@@ -39,7 +39,7 @@ const CategoryLeftSidebar = () => {
                                 <ul className="subcategories">
                                     {category.subcategories.map((subcategory, subIndex) => (
                                         <li key={subIndex} className='my-[6px]'>
-                                            <Link>
+                                            <Link to={`category/sub-category-course`}>
                                             - {subcategory}
                                             </Link>
                                         </li>

@@ -13,6 +13,7 @@ import SignUp from "../../pages/SignUp/SignUp";
 import Category from "../../pages/category/Category";
 import CategoryLayout from "../../layout/CategoryLayout/CategoryLayout";
 import SubCategory from "../../components/SubCategory/SubCategory";
+import SubCourse from "../../components/SubCourse/SubCourse";
 
 
 export const router = createBrowserRouter([
@@ -43,10 +44,15 @@ export const router = createBrowserRouter([
 
                     },
                     {
-                        path:'category/sub-category',
+                        path:'sub-category',
                         element:<SubCategory/>
 
-                    }
+                    },
+                    {
+                        path:'category/sub-category-course',
+                        element:<SubCourse/>
+
+                    },
                 ]
                 
             },
