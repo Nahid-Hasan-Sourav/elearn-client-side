@@ -6,7 +6,7 @@ const SubCategory = () => {
       <>
         <div className="container px-[15px] mx-auto my-[20px] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-4">
         
-        <Link to={`category/sub-category-course`}>
+        <Link to={`sub-category-course`}>
                 
         <div className="shadow-xl card bg-base-100">
             <figure>

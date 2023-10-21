@@ -49,7 +49,7 @@ export const router = createBrowserRouter([
 
                     },
                     {
-                        path:'category/sub-category-course',
+                        path:'/category/sub-category/sub-category-course',
                         element:<SubCourse/>
 
                     },

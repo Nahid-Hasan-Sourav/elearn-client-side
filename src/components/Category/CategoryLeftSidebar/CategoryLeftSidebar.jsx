@@ -39,7 +39,7 @@ const CategoryLeftSidebar = () => {
                                 <ul className="subcategories">
                                     {category.subcategories.map((subcategory, subIndex) => (
                                         <li key={subIndex} className='my-[6px]'>
-                                            <Link to={`category/sub-category-course`}>
+                                            <Link to={`/category/sub-category/sub-category-course`}>
                                             - {subcategory}
                                             </Link>
                                         </li>
